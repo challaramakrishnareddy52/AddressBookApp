@@ -22,6 +22,9 @@ namespace AddressBookApp
                 case 2:
                     contact.ListPeople();
                     break;
+                case 3:
+                    contact.EditPerson();
+                    break;
                 default:
                     Console.WriteLine("Invalid Option selected , Please try again ");
                     break;
