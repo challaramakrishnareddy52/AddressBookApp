@@ -11,7 +11,8 @@ namespace AddressBookApp
         ReEnteringApp:
             Console.WriteLine("Select any one from below options \n" +
                 "Press 1 : to Create/Add a new contact\n" +
-                "Press 2 : to view all the contacts in Address book.");
+                "Press 2 : to Edit/Modify any existing contact\n" +
+                "Press 3 : to view all the contacts in Address Book");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
