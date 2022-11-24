@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
 namespace AddressBookApp
-{
-    [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
+{ 
     public class Person
         {
             public string firstName { get; set; }
@@ -16,9 +10,17 @@ namespace AddressBookApp
             public double phoneNo { get; set; }
             public string emailId { get; set; }
 
-        private string GetDebuggerDisplay()
+        public Person(string firstName, string lastName, string address, double phoneNo, string emailId)
         {
-            return ToString();
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.address = address;
+            this.phoneNo = phoneNo;
+            this.emailId = emailId;
+        }
+        public Person()
+        {
+
         }
     }
     }
